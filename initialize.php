@@ -21,11 +21,13 @@ if (version_compare(phpversion(), '8.1', '>=')) {
     die("mysqli_report function is not available."); // No point to continue as mysqli will not work.
 }
 
-// Upstream base version, plus the identifier of this community security build.
-// The suffix is deliberate: this is a modified redistribution of an upstream
-// that ended at 1.22.22.5818, and it must not be mistakable for an Anuko
-// release. It is rendered in the page footer next to the Anuko name.
-define("APP_VERSION", "1.22.22.5818+security.1");
+// Community security build. Continues upstream's numbering, with the build
+// number raised well clear of upstream's final 1.22.22.5818.
+//
+// Note that this string does not itself mark the build as modified, and the
+// page footer renders it next to the Anuko name and copyright. What records the
+// modification is NOTICE-MODIFIED.md, the release notes and the tag message.
+define("APP_VERSION", "1.22.22.6000");
 define("APP_DIR", dirname(__FILE__));
 define("LIBRARY_DIR", APP_DIR."/WEB-INF/lib");
 define("TEMPLATE_DIR", APP_DIR."/WEB-INF/templates");

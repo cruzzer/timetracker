@@ -35,10 +35,14 @@ Tracker database with no migration.
 
 ## Versioning
 
-`<upstream version>+security.<n>` — for example `1.22.22.5818+security.1`. The
-part before the `+` is the upstream release this is derived from and does not
-advance; `n` increments with each security build. Upstream never used a `+`
-suffix, so the two numbering schemes cannot collide.
+This build is `1.22.22.6000`. It continues upstream's own numbering scheme, with
+the build number raised well clear of upstream's final `1.22.22.5818` so that
+later community builds can increment from there.
+
+**The version string therefore does not, on its own, tell you that this is a
+modified build** — and the page footer renders it next to the Anuko name and
+copyright. This file, the release notes and the release tag message are what
+record the modification. If you redistribute this further, carry them with it.
 
 ## Verification
 
