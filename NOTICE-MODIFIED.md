@@ -35,9 +35,8 @@ Tracker database with no migration.
 
 ## Versioning
 
-This build is `1.22.22.6000`. It continues upstream's own numbering scheme, with
-the build number raised well clear of upstream's final `1.22.22.5818` so that
-later community builds can increment from there.
+This build is `1.22.23.1`. It continues upstream's own numbering scheme from
+upstream's final `1.22.22.5818`.
 
 **The version string therefore does not, on its own, tell you that this is a
 modified build** — and the page footer renders it next to the Anuko name and
